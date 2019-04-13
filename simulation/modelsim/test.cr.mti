@@ -1,0 +1,15 @@
+C:/intelFPGA_lite/VGA_Test/simulation/modelsim/VGA_Test.vt {1 {vlog -work work -stats=none C:/intelFPGA_lite/VGA_Test/simulation/modelsim/VGA_Test.vt
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module vlg_tst
+
+Top level modules:
+	vlg_tst
+
+} {} {}} C:/intelFPGA_lite/VGA_Test/VGA_Test.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/VGA_Test/VGA_Test.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module VGA_Test
+
+Top level modules:
+	VGA_Test
+
+} {} {}}

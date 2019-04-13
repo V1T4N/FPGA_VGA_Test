@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/VGA_Test/simulation/modelsim
+vVGA_Test
+!s110 1555161190
+!i10b 1
+!s100 <2nGoSm<SPFe09ZY0mCcF1
+IT93^`0Jzj05k0A>39JY?O3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1555155869
+8C:/intelFPGA_lite/VGA_Test/VGA_Test.v
+FC:/intelFPGA_lite/VGA_Test/VGA_Test.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1555161190.000000
+!s107 C:/intelFPGA_lite/VGA_Test/VGA_Test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/VGA_Test|C:/intelFPGA_lite/VGA_Test/VGA_Test.v|
+!i113 1
+Z3 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/VGA_Test
+Z4 tCvgOpt 0
+n@v@g@a_@test
+vVGA_Test_vlg_tst
+!s110 1555161191
+!i10b 1
+!s100 @1hPQ1QFSP;IkS8Q20[gE1
+I1BEelEbV6VZ;PiYZR8CV^3
+R1
+R0
+w1555161141
+8C:/intelFPGA_lite/VGA_Test/simulation/modelsim/VGA_Test_vlg_tst.vt
+FC:/intelFPGA_lite/VGA_Test/simulation/modelsim/VGA_Test_vlg_tst.vt
+L0 30
+R2
+r1
+!s85 0
+31
+!s108 1555161191.000000
+!s107 C:/intelFPGA_lite/VGA_Test/simulation/modelsim/VGA_Test_vlg_tst.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/VGA_Test/simulation/modelsim|C:/intelFPGA_lite/VGA_Test/simulation/modelsim/VGA_Test_vlg_tst.vt|
+!i113 1
+R3
+!s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/VGA_Test/simulation/modelsim
+R4
+n@v@g@a_@test_vlg_tst

@@ -1,0 +1,61 @@
+# Compile of VGA_Test.vt was successful.
+# Compile of VGA_Test.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=\"+acc\" work.vlg_tst
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" work.vlg_tst 
+# Start time: 21:10:37 on Apr 13,2019
+# Loading work.vlg_tst
+# Loading rtl_work.VGA_Test
+add wave -position end  sim:/vlg_tst/VGA_B
+add wave -position end  sim:/vlg_tst/VGA_R
+add wave -position end  sim:/vlg_tst/VGA_B
+add wave -position 0  sim:/vlg_tst/CLK
+add wave -position 1  sim:/vlg_tst/VGA_HS
+add wave -position 1  sim:/vlg_tst/VGA_VS
+run
+# Running testbench
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vsim work.VGA_Test
+# End time: 21:15:50 on Apr 13,2019, Elapsed time: 0:05:13
+# Errors: 1, Warnings: 0
+# vsim work.VGA_Test 
+# Start time: 21:15:50 on Apr 13,2019
+# Loading work.VGA_Test
+add wave -position end  sim:/VGA_Test/CLK
+run
+run
+run
+run
+run
+run
+run
+add wave -position end  sim:/VGA_Test/VGA_R
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 21:17:13 on Apr 13,2019, Elapsed time: 0:01:23
+# Errors: 0, Warnings: 0
