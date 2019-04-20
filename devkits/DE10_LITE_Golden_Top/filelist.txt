@@ -1,3 +1,0 @@
-DE10_LITE_Golden_Top.v
-platform_setup.tcl
-filelist.txt

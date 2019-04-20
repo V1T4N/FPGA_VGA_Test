@@ -1,15 +1,15 @@
-Analysis & Synthesis Status : Successful - Sat Apr 13 22:30:08 2019
+Analysis & Synthesis Status : Successful - Sun Apr 21 01:53:38 2019
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : VGA_Test
 Top-level Entity Name : VGA_Test
 Family : MAX 10
-Total logic elements : 976
-    Total combinational functions : 705
-    Dedicated logic registers : 653
-Total registers : 653
-Total pins : 15
+Total logic elements : 1,111
+    Total combinational functions : 841
+    Dedicated logic registers : 742
+Total registers : 742
+Total pins : 24
 Total virtual pins : 0
-Total memory bits : 196,608
+Total memory bits : 589,824
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0
 UFM blocks : 0

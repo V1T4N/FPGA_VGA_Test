@@ -1,11 +1,13 @@
 module VGA_Test(
 
 	input CLK,
+	input [1:0] KEY,
 	output  reg [3:0]VGA_R, //4bitアナログ色信号
 	output  reg [3:0]VGA_G,
 	output  reg [3:0]VGA_B,
 	output  reg VGA_HS, //水平同期
-	output  reg VGA_VS  //垂直同期
+	output  reg VGA_VS,  //垂直同期
+	output  wire	[6:0] HEX0
 );
 
 
@@ -25,7 +27,24 @@ module VGA_Test(
 	
 	
 	reg vga_clk; //VGA用クロック
-
+	
+	reg [14:0] address_sig = 0;
+	reg [11:0] data_sig;
+	wire [11:0] q_sig;
+	reg clock_sig;
+	reg wren_sig;
+	
+	always @* begin
+		clock_sig = vga_clk;
+	end
+	RAM	RAM_inst (
+	.address ( address_sig ),
+	.clock ( clock_sig ),
+	.data ( data_sig ),
+	.wren ( wren_sig ),
+	.q ( q_sig )
+	);
+	
 
     always @(posedge CLK)begin //システムクロック50MHzを分周して25MHzに
 		vga_clk = ~vga_clk;     
@@ -84,11 +103,15 @@ module VGA_Test(
 	 // color
 	always @(posedge vga_clk)begin
 			if ((vcnt < VVALID ) && (hcnt < HVALID))begin //有効画素の時描画する
-				if( (vcnt > 0 + 8 * framecnt)&&(vcnt < 120 + 8 *framecnt) && (hcnt > 0 + 10 * framecnt ) && (hcnt < 320 + 10 * framecnt))begin
+				if( (vcnt < 150) && (hcnt < 150))begin
 					//長方形の場所をframecntによって変更することでアニメーション
-					VGA_R   <= 	vcnt[3:0];//グラデーション
-					VGA_G   <=  4'b0000;
-					VGA_B   <=  4'b1111;
+					VGA_R   <= 	q_sig[11:8]; //VRAMから読み出す
+					VGA_G   <=  q_sig[7:4];
+					VGA_B   <=  q_sig[4:0];
+					address_sig = address_sig + 1;
+					if(address_sig == 22500 )begin
+						address_sig = 0;
+					end
 				end
 				else begin
 					VGA_R   <= 	4'b1111;
